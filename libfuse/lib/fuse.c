@@ -1777,6 +1777,7 @@ int fuse_fs_read_buf(struct fuse_fs *fs, const char *path,
 			buf->buf[0].mem = mem;
 			*bufp = buf;
 			set_buf(mem);
+			fuse_log(FUSE_LOG_DEBUG, "fuse: mem is%p\n:",mem);
 			res = fs->op.read(path, mem, size, off, fi);
 			if (res >= 0)
 				buf->buf[0].size = res;
