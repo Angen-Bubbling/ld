@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "kernel.h": "c",
+        "kfifo.h": "c",
+        "mutex": "c",
+        "shared_mutex": "c",
+        "condition_variable": "c",
+        "syscalls.h": "c"
+    }
+}

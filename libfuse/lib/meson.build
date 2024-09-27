@@ -24,6 +24,11 @@ if libpread.found()
    deps += [ libpread ]
 endif
 
+liburing = cc.find_library('uring', required: false)
+if liburing.found()
+   deps += [ liburing ]
+endif
+
 libdl = cc.find_library('dl', required: false)
 if libdl.found()
    deps += [ libdl ]
